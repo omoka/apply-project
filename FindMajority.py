@@ -1,8 +1,8 @@
-def findMarjority(inp):
+def findMajority(inp):
   #the majority number will show if there is an element that appears more than half of total elements.
-  #input as string
-  no_of_elements = int(inp.splitlines()[0])
-  elements = inp.splitlines()[1].split()
+  #input as list
+  no_of_elements = int(inp[0])
+  elements = inp[1].split()
 
   count = 0
   majority = ''
@@ -21,3 +21,6 @@ def findMarjority(inp):
   else:
     #if no majority
     return -1
+
+inputs = [input() for i in range(2)]
+findMajority(inputs)
